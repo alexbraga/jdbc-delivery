@@ -28,7 +28,7 @@
 
 ## About
 
-<p align="justify">A simple application API to manage and track orders, to demonstrate Object-Relational Mapping without the use of frameworks. The process included the creation and instantiation of a PostgreSQL database.</p>
+<p align="justify">A simple application API to manage and track orders, demonstrating Object-Relational Mapping without the use of frameworks. The process included the creation and instantiation of a PostgreSQL database.</p>
 
 ---
 
@@ -57,7 +57,7 @@
 3. <a href="#alter-table-and-insert">ALTER table and INSERT data</a>
 4. <a href="#clone-this-repository">Clone this repository</a>
 5. <a href="#create-localproperties-in-project-root-and-set-environment-variables">Set your environment variables</a>
-5. <a href="#">Compile the code</a>
+5. Compile the code
 6. Run `Program.java`
 
 ### Pre-requisites
