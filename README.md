@@ -53,13 +53,14 @@
 ## How it works
 
 1. <a href="https://www.postgresql.org/docs/current/server-start.html">Start Postgres server</a>
-2. <a href="https://dbeaver.com/docs/wiki/Create-Connection/">Connect to the database</a>
-3. <a href="#database-ddl">Create database table</a>
-4. <a href="#alter-table-and-insert">ALTER table and INSERT data</a>
-5. <a href="#clone-this-repository">Clone this repository</a>
-6. <a href="#create-localproperties-in-project-root-and-set-environment-variables">Set your environment variables</a>
-7. Compile the code
-8. Run `Program.java`
+2. <a href="https://dbeaver.com/docs/wiki/Create-Connection/">Connect to the database server using DBeaver</a> (or your preferred database manager)
+3. Create a new database (DBeaver: right click "Databases" -> "Create New Database")
+4. <a href="#database-ddl">Create database table</a>
+5. <a href="#alter-table-and-insert">ALTER table and INSERT data</a>
+6. <a href="#clone-this-repository">Clone this repository</a>
+8. Open the project folder with your preferred IDE
+7. <a href="#create-localproperties-in-project-root-and-set-environment-variables">Set your environment variables</a>
+9. Run `Program.java`
 
 #### Pre-requisites
 
@@ -135,7 +136,7 @@ git clone https://github.com/alexbraga/jdbc-delivery.git
 
 ```
 user=your_db_username
-password=your_db_passwd
+password=your_db_password
 dburl=database_url
 useSSL=false
 ```
