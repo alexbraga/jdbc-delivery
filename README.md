@@ -53,20 +53,22 @@
 ## How it works
 
 1. <a href="https://www.postgresql.org/docs/current/server-start.html">Start Postgres server</a>
-2. <a href="#database-ddl">Create local database</a>
-3. <a href="#alter-table-and-insert">ALTER table and INSERT data</a>
-4. <a href="#clone-this-repository">Clone this repository</a>
-5. <a href="#create-localproperties-in-project-root-and-set-environment-variables">Set your environment variables</a>
-5. Compile the code
-6. Run `Program.java`
+2. <a href="https://dbeaver.com/docs/wiki/Create-Connection/">Connect to the database</a>
+3. <a href="#database-ddl">Create database table</a>
+4. <a href="#alter-table-and-insert">ALTER table and INSERT data</a>
+5. <a href="#clone-this-repository">Clone this repository</a>
+6. <a href="#create-localproperties-in-project-root-and-set-environment-variables">Set your environment variables</a>
+7. Compile the code
+8. Run `Program.java`
 
-### Pre-requisites
+#### Pre-requisites
 
 Before you begin, you will need to have the following tools installed on your
 machine:
 - [Git](https://git-scm.com)
 - [Java OpenJDK](https://www.oracle.com/java/technologies/downloads/)
 - [PostgreSQL](https://www.postgresql.org/)
+- [DBeaver](https://dbeaver.io/)
 
 In addition, you might also want an IDE to work with the code, like
 [IntelliJ IDEA](https://www.jetbrains.com/idea/).
