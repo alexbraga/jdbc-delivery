@@ -58,11 +58,10 @@
 4. <a href="#database-ddl">Create database tables</a>
 5. <a href="#alter-table-and-insert">ALTER tables and INSERT data</a>
 6. <a href="#clone-this-repository">Clone this repository</a>
-8. Open the project folder with your preferred IDE
 7. <a href="#set-the-environment-variables">Set the environment variables</a>
-9. Run `Program.java`
+8. <a href="#running-the-application">Run the application</a>
 
-#### Pre-requisites
+### Pre-requisites
 
 Before getting started, you'll need to have the following tools installed on your machine:
 
@@ -75,7 +74,7 @@ Before getting started, you'll need to have the following tools installed on you
 In addition, you might also want an IDE to work with the code, like
 [IntelliJ IDEA](https://www.jetbrains.com/idea/).
 
-#### Database DDL
+### Database DDL
 
 ```sql
 create table tb_order (
@@ -102,7 +101,7 @@ create table tb_product (
     primary key (id)
 );
 ```
-#### ALTER table and INSERT
+### ALTER table and INSERT
 
 ```sql
 alter table if exists tb_order_product add constraint fk_tb_order_product_tb_product
@@ -127,15 +126,15 @@ INSERT INTO tb_order_product (order_id, product_id) VALUES
 (2 , 3);
 ```
 
-#### Clone this repository
+### Clone this repository
 
 ```
 git clone https://github.com/alexbraga/jdbc-delivery.git
 ```
 
-#### Set the environment variables
+### Set the environment variables
 
-- Create `local.properties` in project root and set the environment variables
+- Create `local.properties` in the project root and set the environment variables
 
 ```
 user=your_db_username
@@ -143,6 +142,25 @@ password=your_db_password
 dburl=database_url
 useSSL=false
 ```
+
+### Running the application
+
+Navigate to the root directory of the project
+```
+cd jdbc-delivery
+```
+
+Build the project
+```
+mvn compile
+```
+
+Run the application
+```
+java -cp target/classes app.Program
+```
+
+- Alternatively, open the project with your preferred IDE and run `/src/main/java/app/Program.java`
 
 ---
 
@@ -155,6 +173,8 @@ The following tools were used in the construction of the project:
 - **[Java OpenJDK 11](https://www.oracle.com/java/technologies/downloads/)**
 
 #### **Dependencies**
+
+- **[PostgreSQL JDBC Driver](https://mvnrepository.com/artifact/org.postgresql/postgresql)**
 
 > See the file
 > [pom.xml](https://github.com/alexbraga/jdbc-delivery/blob/master/pom.xml)
